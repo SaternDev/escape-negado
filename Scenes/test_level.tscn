@@ -1,0 +1,55 @@
+[gd_scene load_steps=6 format=4 uid="uid://cfdc3oibig4cj"]
+
+[ext_resource type="Texture2D" uid="uid://ciehkpicimdq5" path="res://Assets/Tilemap/EscapeNegadoTilemap2t.png" id="1_iti4p"]
+[ext_resource type="PackedScene" uid="uid://dvl4vet5ryocn" path="res://Resources/TestCharacter.tscn" id="2_dtjkg"]
+[ext_resource type="Script" uid="uid://jwj7dl36bpcm" path="res://Scripts/cameraController.gd" id="2_eglq2"]
+
+[sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_iti4p"]
+texture = ExtResource("1_iti4p")
+0:0/0 = 0
+0:0/0/physics_layer_0/polygon_0/points = PackedVector2Array(-8, -8, 8, -8, 8, 8, -8, 8, -8, 8)
+1:0/0 = 0
+1:0/0/physics_layer_0/polygon_0/points = PackedVector2Array(-8, -8, 8, -8, 8, 8, -8, 8, -8, 8)
+2:0/0 = 0
+2:0/0/physics_layer_0/polygon_0/points = PackedVector2Array(-8, -8, 8, -8, 8, 8, -8, 8, -8, 8)
+3:0/0 = 0
+3:0/0/physics_layer_0/polygon_0/points = PackedVector2Array(-8, -8, 8, -8, 8, 8, -8, 8, -8, 8)
+4:0/0 = 0
+4:0/0/physics_layer_0/polygon_0/points = PackedVector2Array(-8, -8, 8, -8, 8, 8, -8, 8, -8, 8)
+5:0/0 = 0
+5:0/0/physics_layer_0/polygon_0/points = PackedVector2Array(-8, -8, 8, -8, 8, 8, -8, 8, -8, 8)
+6:0/0 = 0
+7:0/0 = 0
+8:0/0 = 0
+9:0/0 = 0
+9:0/0/physics_layer_0/polygon_0/points = PackedVector2Array(-8, -8, 8, -8, 8, 8, -8, 8, -8, 8)
+10:0/0 = 0
+10:0/0/physics_layer_0/polygon_0/points = PackedVector2Array(-8, -8, 8, -8, 8, 8, -8, 8, -8, 8)
+11:0/0 = 0
+11:0/0/physics_layer_0/polygon_0/points = PackedVector2Array(-8, -8, 8, -8, 8, 8, -8, 8, -8, 8)
+12:0/0 = 0
+12:0/0/physics_layer_0/polygon_0/points = PackedVector2Array(-8, -8, 8, -8, 8, 8, -8, 8, -8, 8)
+13:0/0 = 0
+13:0/0/physics_layer_0/polygon_0/points = PackedVector2Array(-8, -8, 8, -8, 8, 8, -8, 8, -8, 8)
+
+[sub_resource type="TileSet" id="TileSet_eglq2"]
+physics_layer_0/collision_layer = 1
+sources/3 = SubResource("TileSetAtlasSource_iti4p")
+
+[node name="TestLevel" type="Node2D"]
+
+[node name="LevelMap" type="TileMapLayer" parent="."]
+tile_map_data = PackedByteArray("AAD8/wAAAwALAAAAAAD9/wAAAwAEAAAAAAD+/wAAAwAEAAAAAAD//wAAAwAEAAAAAAAAAAAAAwAMAAAAAAABAAAAAwANAAAAAAACAAAAAwAMAAAAAAADAAAAAwAEAAAAAAAEAAAAAwAEAAAAAAD8//z/AwAEAAAAAAD9//z/AwAEAAAAAAD+//z/AwAEAAAAAAD///z/AwAEAAAAAAAAAPz/AwANAAAAAAABAPz/AwAEAAAAAAACAPz/AwAEAAAAAAADAPz/AwAEAAAAAAAEAPz/AwAKAAAAAAD0/wMAAwAEAAAAAAD1/wMAAwAMAAAAAAD2/wMAAwAEAAAAAAD3/wMAAwAEAAAAAAD4/wMAAwAEAAAAAAD5/wMAAwAEAAAAAAD6/wMAAwAEAAAAAAD0//7/AwALAAAAAAD1//7/AwAEAAAAAAD2//7/AwAEAAAAAAD3//7/AwAEAAAAAAD4//7/AwAEAAAAAAD5//7/AwAEAAAAAAAKAAMAAwAEAAAAAAALAAMAAwAEAAAAAAAMAAMAAwAEAAAAAAAAAP//AwABAAAAAAAAAP7/AwABAAAAAAAAAP3/AwABAAAAAAAGAAEAAwABAAAAAAAGAAAAAwAKAAAAAAAGAP//AwABAAAAAAAGAP7/AwABAAAAAAAGAP3/AwABAAAAAAAGAPz/AwABAAAAAAAJAAQAAwABAAAAAAAJAAMAAwALAAAAAAAJAAIAAwABAAAAAAAJAAEAAwABAAAAAAAJAAAAAwABAAAAAAAJAP//AwABAAAAAAAJAP7/AwABAAAAAAAJAP3/AwABAAAAAAD7/wQAAwABAAAAAAD7/wMAAwAKAAAAAAD7/wIAAwAAAAAAAAD8/wEAAwABAAAAAAD8////AwABAAAAAAD6//z/AwAAAAAAAAD6//3/AwABAAAAAAD6//7/AwAKAAAAAAD6////AwABAAAAAAD6/wAAAwABAAAAAAD0//3/AwABAAAAAAD0////AwABAAAAAAD1/wAAAwACAAAAAAD1/wEAAwABAAAAAAD1/wIAAwABAAAAAAAAAAIAAwAAAAAAAAABAAEAAwABAAAAAAACAP//AwABAAAAAAACAP7/AwABAAAAAAADAP3/AwAEAAAAAAAEAPv/AwAAAAAAAAAFAPr/AwABAAAAAAAFAAAAAwAEAAAAAAABAAIAAwAFAAAAAAD8/wIAAwAFAAAAAAD0/wAAAwADAAAAAAD7//z/AwAEAAAAAAACAP3/AwAAAAAAAAAEAP3/AwAFAAAAAAD1////AwAHAAAAAAD5////AwAHAAAAAAD4////AwAHAAAAAAD3////AwAHAAAAAAD2////AwAHAAAAAAD1/wQAAwAHAAAAAAD2/wQAAwAHAAAAAAD3/wQAAwAHAAAAAAD4/wQAAwAHAAAAAAD5/wQAAwAHAAAAAAD6/wQAAwAHAAAAAAD8/wMAAwAIAAAAAAD9/wEAAwAHAAAAAAD+/wEAAwAHAAAAAAD//wEAAwAHAAAAAAAAAAEAAwAHAAAAAAACAAEAAwAHAAAAAAADAAEAAwAHAAAAAAAEAAEAAwAHAAAAAAAFAAEAAwAHAAAAAAADAP7/AwAHAAAAAAAEAP7/AwAIAAAAAAABAP3/AwAHAAAAAAD///3/AwAHAAAAAAD+//3/AwAHAAAAAAD9//3/AwAHAAAAAAD8//3/AwAHAAAAAAD7//3/AwAHAAAAAAD0/wEAAwAGAAAAAAD0/wQAAwAGAAAAAAAMAAQAAwAIAAAAAAAKAAQAAwAHAAAAAAALAAQAAwAHAAAAAAAFAPv/AwAFAAAAAAA=")
+tile_set = SubResource("TileSet_eglq2")
+rendering_quadrant_size = 32
+physics_quadrant_size = 32
+
+[node name="Camera2D" type="Camera2D" parent="."]
+zoom = Vector2(5, 5)
+position_smoothing_enabled = true
+position_smoothing_speed = 3.0
+script = ExtResource("2_eglq2")
+
+[node name="TestPlayer" parent="." instance=ExtResource("2_dtjkg")]
+position = Vector2(7, 6)
+motion_mode = 1
