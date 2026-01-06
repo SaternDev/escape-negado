@@ -1,8 +1,9 @@
-[gd_scene load_steps=6 format=4 uid="uid://cfdc3oibig4cj"]
+[gd_scene load_steps=7 format=4 uid="uid://cfdc3oibig4cj"]
 
 [ext_resource type="Texture2D" uid="uid://ciehkpicimdq5" path="res://Assets/Tilemap/EscapeNegadoTilemap2t.png" id="1_iti4p"]
 [ext_resource type="PackedScene" uid="uid://dvl4vet5ryocn" path="res://Resources/TestCharacter.tscn" id="2_dtjkg"]
 [ext_resource type="Script" uid="uid://jwj7dl36bpcm" path="res://Scripts/cameraController.gd" id="2_eglq2"]
+[ext_resource type="PackedScene" uid="uid://bteth7m2b4oa2" path="res://UI/movile_controls.tscn" id="4_rsyfn"]
 
 [sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_iti4p"]
 texture = ExtResource("1_iti4p")
@@ -53,3 +54,5 @@ script = ExtResource("2_eglq2")
 [node name="TestPlayer" parent="." instance=ExtResource("2_dtjkg")]
 position = Vector2(7, 6)
 motion_mode = 1
+
+[node name="MovileControls" parent="." instance=ExtResource("4_rsyfn")]
